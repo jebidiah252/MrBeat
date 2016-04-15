@@ -12,8 +12,8 @@
 		3FA897D01CAF022C009C7760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA897CE1CAF022C009C7760 /* Main.storyboard */; };
 		3FA897D21CAF022C009C7760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA897D11CAF022C009C7760 /* Assets.xcassets */; };
 		3FA897D51CAF022D009C7760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA897D31CAF022D009C7760 /* LaunchScreen.storyboard */; };
-		3FF962A81CB85BDB004FD0F6 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FF962A61CB85BDB004FD0F6 /* 1.wav */; };
-		3FF962A91CB85BDB004FD0F6 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FF962A71CB85BDB004FD0F6 /* 2.wav */; };
+		3FE61B4D1CC176DE002A9EE8 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FE61B4B1CC176DE002A9EE8 /* 1.wav */; };
+		3FE61B4E1CC176DE002A9EE8 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FE61B4C1CC176DE002A9EE8 /* 2.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		3FA897D11CAF022C009C7760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FA897D41CAF022D009C7760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FA897D61CAF022D009C7760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FF962A61CB85BDB004FD0F6 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 1.wav; path = "../../../../../../Users/student/Downloads/metronome sounds/1.wav"; sourceTree = "<group>"; };
-		3FF962A71CB85BDB004FD0F6 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 2.wav; path = "../../../../../../Users/student/Downloads/metronome sounds/2.wav"; sourceTree = "<group>"; };
+		3FE61B4B1CC176DE002A9EE8 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		3FE61B4C1CC176DE002A9EE8 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +42,8 @@
 		3FA897BE1CAF022A009C7760 = {
 			isa = PBXGroup;
 			children = (
+				3FE61B4B1CC176DE002A9EE8 /* 1.wav */,
+				3FE61B4C1CC176DE002A9EE8 /* 2.wav */,
 				3FA897C91CAF022C009C7760 /* Mr. Beat */,
 				3FA897C81CAF022A009C7760 /* Products */,
 			);
@@ -60,8 +62,6 @@
 			children = (
 				3FA897CA1CAF022C009C7760 /* AppDelegate.swift */,
 				3FA897CC1CAF022C009C7760 /* ViewController.swift */,
-				3FF962A61CB85BDB004FD0F6 /* 1.wav */,
-				3FF962A71CB85BDB004FD0F6 /* 2.wav */,
 				3FA897CE1CAF022C009C7760 /* Main.storyboard */,
 				3FA897D11CAF022C009C7760 /* Assets.xcassets */,
 				3FA897D31CAF022D009C7760 /* LaunchScreen.storyboard */,
@@ -130,8 +130,8 @@
 			files = (
 				3FA897D51CAF022D009C7760 /* LaunchScreen.storyboard in Resources */,
 				3FA897D21CAF022C009C7760 /* Assets.xcassets in Resources */,
-				3FF962A81CB85BDB004FD0F6 /* 1.wav in Resources */,
-				3FF962A91CB85BDB004FD0F6 /* 2.wav in Resources */,
+				3FE61B4D1CC176DE002A9EE8 /* 1.wav in Resources */,
+				3FE61B4E1CC176DE002A9EE8 /* 2.wav in Resources */,
 				3FA897D01CAF022C009C7760 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

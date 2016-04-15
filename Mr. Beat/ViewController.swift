@@ -31,7 +31,10 @@ class ViewController: UIViewController {
     var quarterSound : AVAudioPlayer?
     
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var incrementBPMButton: UIButton!
 
+    @IBOutlet weak var accentSwitchMe: UISwitch!
+    @IBOutlet weak var addButton: UIButton!
     func setupAudioPlaerWithFile(file: NSString, type: NSString) -> AVAudioPlayer? {
         
         let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
@@ -63,26 +66,25 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var QuarterSwitchMe: UISwitch!
     
-    @IBAction func AccentSwitch(sender: AnyObject) {
-        accentOn = !accentOn
+    @IBOutlet weak var EighthSwitchMe: UISwitch!
+    
+    @IBOutlet weak var TripletSwitchMe: UISwitch!
+    
+    @IBOutlet weak var SixteenthSwitchMe: UISwitch!
+    
+    @IBAction func switchAccentOnOff(sender: AnyObject) {
+        if accentSwitchMe.on{
+            print("You Made it")
+            accentSwitchMe.setOn(false, animated: true)
+        }else{
+            print("You done goofed")
+            accentSwitchMe.setOn(true, animated: true)
+        }
     }
     
-    @IBAction func QuarterSwitch(sender: AnyObject) {
-        quarterOn = !quarterOn
-    }
 
-    @IBAction func EighthSwitch(sender: AnyObject) {
-        eighthOn = !eighthOn
-    }
-    
-    @IBAction func SixteenthSwitch(sender: AnyObject) {
-        sixteenthOn = !sixteenthOn
-    }
-    
-    @IBAction func TripletSwitch(sender: AnyObject) {
-        tripletOn = !tripletOn
-    }
     
     @IBAction func incrementBPM(sender: AnyObject) {
         bpm += 1
