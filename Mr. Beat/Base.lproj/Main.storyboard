@@ -104,20 +104,33 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lPj-bB-zXG">
                                 <rect key="frame" x="475" y="239" width="51" height="31"/>
                                 <connections>
+                                    <action selector="accentSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Myb-R3-wew"/>
                                     <action selector="switchAccentOnOff:" destination="BYZ-38-t0r" eventType="valueChanged" id="RRh-At-PPs"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BqY-LY-64z">
                                 <rect key="frame" x="475" y="278" width="51" height="31"/>
+                                <connections>
+                                    <action selector="quarterSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="FtI-P0-uU9"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="06Q-ZX-ms6">
                                 <rect key="frame" x="475" y="317" width="51" height="31"/>
+                                <connections>
+                                    <action selector="eighthSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="tPU-se-aen"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wt1-Df-pgs">
                                 <rect key="frame" x="475" y="356" width="51" height="31"/>
+                                <connections>
+                                    <action selector="sixteenthSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="VeK-Le-gzx"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C6g-qN-6t2">
                                 <rect key="frame" x="475" y="395" width="51" height="31"/>
+                                <connections>
+                                    <action selector="tripletSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="i4h-pV-7Kr"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
