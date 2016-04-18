@@ -12,6 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
     @IBOutlet weak var bpmLabel: UILabel!
+    @IBOutlet weak var quarterSwitch: UISwitch!
     
     var accentOn = true
     var quarterOn = true
@@ -31,10 +32,13 @@ class ViewController: UIViewController {
     var quarterSound : AVAudioPlayer?
     
     @IBOutlet weak var startButton: UIButton!
+    @IBAction func quarterAction(sender: AnyObject) {
+        print("Here ia m")
+    }
 
     
 
-    func setupAudioPlaerWithFile(file: NSString, type: NSString) -> AVAudioPlayer? {
+    func setupAudioPlayerWithFile(file: NSString, type: NSString) -> AVAudioPlayer? {
         
         let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
         let url = NSURL.fileURLWithPath(path!)
@@ -57,47 +61,14 @@ class ViewController: UIViewController {
         bpmLabel.text = "120"
         makeBPM()
         
-        if let accentSound = self.setupAudioPlaerWithFile("2", type: "wav"){
+        if let accentSound = self.setupAudioPlayerWithFile("2", type: "wav"){
             self.accentSound = accentSound
         }
-        if let quarterSound = self.setupAudioPlaerWithFile("1", type: "wav"){
+        if let quarterSound = self.setupAudioPlayerWithFile("1", type: "wav"){
             self.quarterSound = quarterSound
         }
     }
-    @IBOutlet weak var accentSwitchMe: UISwitch!
     
-    @IBOutlet weak var QuarterSwitchMe: UISwitch!
-    
-    @IBOutlet weak var EighthSwitchMe: UISwitch!
-    
-    @IBOutlet weak var TripletSwitchMe: UISwitch!
-    
-    @IBOutlet weak var SixteenthSwitchMe: UISwitch!
-    
-    @IBAction func switchAccentOnOff(sender: AnyObject) {
-        if accentSwitchMe.on{
-            print("You Made it")
-            accentSwitchMe.setOn(false, animated: true)
-        }else{
-            print("You done goofed")
-            accentSwitchMe.setOn(true, animated: true)
-        }
-    }
-    
-    @IBAction func accentSwitch(sender: AnyObject) {
-    }
-
-    @IBAction func quarterSwitch(sender: AnyObject) {
-    }
-    
-    @IBAction func eighthSwitch(sender: AnyObject) {
-    }
-    
-    @IBAction func sixteenthSwitch(sender: AnyObject) {
-    }
-    
-    @IBAction func tripletSwitch(sender: AnyObject) {
-    }
     
     @IBAction func incrementBPM(sender: AnyObject) {
         bpm += 1
@@ -115,7 +86,7 @@ class ViewController: UIViewController {
         
         if(metronomeOn){
             counter = -1
-            timer = NSTimer.scheduledTimerWithTimeInterval(sleep, target: self, selector: "startThat", userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(sleep, target: self, selector: #selector(ViewController.startThat), userInfo: nil, repeats: true)
             startButton.setTitle("Stop", forState: .Normal)
         }else{
             timer.invalidate()
